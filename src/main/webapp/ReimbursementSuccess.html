@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+		<title>CSS Template</title> 
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<link href="css/homepageStyle.css" rel="stylesheet"> 
+		</head>
+		<body> 
+		<header> 
+		<h2>Welcome to ERS</h2>
+		 </header>
+		<section> 
+			<nav> 
+			<ul> 
+				<li><a href='ReimbursementForm.html'>Apply for Reimbursement</a></li> 
+				<li><a href='http://localhost:8080/ERS_Application/PendingList'>Pending Applications</a></li> 
+				<li><a href='http://localhost:8080/ERS_Application/ApprovedList'>Completed Applications</a></li> 
+				<li><a href='http://localhost:8080/ERS_Application/UpdateEmployee'>Update Profile</a></li> 
+				<li><a href="logout.jsp">Logout</a></li> 
+			</ul> 
+			</nav>
+		<article> 
+    
+    
+        <center>
+            <div >
+        <h6>Reimbursement request is Sucessfully!</h6>
+    </div>
+        <input type="submit" value="Continue" onclick="goToHomePage()"></button>
+        <script>
+            function goToHomePage()
+            {
+                window.location.href="EmployeeHome.html";
+            }
+        </script>
+    </center>
+    
+    
+   </article> 
+		</section> 
+		<footer> 
+	<p>Footer</p> 
+		</footer> 
+	</body> 
+</html> 

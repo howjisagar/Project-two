@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+		<title>CSS Template</title> 
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<link href="css/homepageStyle.css" rel="stylesheet"> 
+		</head>
+		<body> 
+		<header> 
+		<h2>Welcome to ERS</h2>
+		 </header>
+		<section> 
+			<nav> 
+			<ul> 
+				<li><a href='ReimbursementForm.html'>Apply for Reimbursement</a></li> 
+				<li><a href='http://localhost:8080/ERS_Application/PendingList'>Pending Applications</a></li> 
+				<li><a href='http://localhost:8080/ERS_Application/ApprovedList'>Completed Applications</a></li> 
+				<li><a href='http://localhost:8080/ERS_Application/UpdateEmployee'>Update Profile</a></li> 
+				<li><a href="logout.jsp">Logout</a></li> 
+			</ul> 
+			</nav>
+		<article> 
+		
+			<form action="http://localhost:8080/ERS_Application/ReimbursementRequest" method="GET">
+      			<div class="container">  
+      			<center>  <h6>Employee Reimbursement Form</h6> </center>  
+      			<hr>  
+      			<label> Reimbursement ID </label>   
+      			<Input id="Reimbursementid" type="text" name="reImbursementId" placeholder="Enter your reimbursement id" required> <br>
+      			<label> Reimbursement type </label>   
+      			<select name="reImbursementType">
+        				<option value="Travel">Travel
+        				<option value="Health">Health
+        				<option value="Food">Food
+        				<option value="Education">Education
+    			</select><br>          
+    			<label> Amount </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    
+    			<input id="amt" type="number" name="reImbursementAmount" placeholder="Enter your reimbursement amount" min="1000" max="50000" required> <br> 
+    			<label> Date</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   
+    			<input id="dateOfSubmission" type="date" name="reImbursementSubDate" required>
+   				<input id="status" type="hidden" name="reImbursementStatus" value="Pending" required><br><br>        
+    			<label> Description </label>   
+    			<textarea id="description" rows="5" cols="50" name="reImbursementDescription" placeholder="Enter your description" required></textarea> <br>
+    	  
+    			<input id="file" type="hidden" name="reImbursementFile">
+    			<input id="remarks" type="hidden" name="reImbursementRemarks" value="null" required>
+   				<input id="actionDate" type="hidden" name="reImbursementActionDate" value="00/00/0000" required>
+        		<button id="submitButton" type="submit" class="Register">Submit</button>    
+        		 
+    		</form>  
+		
+		</article> 
+		</section> 
+		<footer> 
+	<p>Footer</p> 
+		</footer> 
+	</body> 
+</html> 
